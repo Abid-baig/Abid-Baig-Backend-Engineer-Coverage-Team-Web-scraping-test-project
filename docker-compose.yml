@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  rollee:
+    build: .
+    env_file: .env
+    container_name: rollee-container
+    command: ["python", "main.py"]
